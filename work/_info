@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dC:/Users/JKA/Google Drive/Studying/System Verilog/AHB to APB
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+vapb_master
+Z1 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+!s110 1537998336
+!i10b 1
+!s100 h4=j2S@ag3>fYl_XN]2K;2
+IdO>@OEZj^6oJhz6e4PKRP2
+V`JN@9S9cnhjKRR_L]QIcM3
+!s105 apb_master_sv_unit
+S1
+dC:/Users/JKA/Google Drive/Studying/System Verilog/APB
+w1537998090
+8C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv
+FC:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv
+L0 1
+Z2 OL;L;10.2c;57
+r1
+!s85 0
+31
+!s108 1537998336.851000
+!s107 C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv|
+!i111 0
+o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
