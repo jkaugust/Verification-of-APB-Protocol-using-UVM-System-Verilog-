@@ -1,0 +1,21 @@
+{C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_bus.sv} {1 {vlog -work work -vopt -sv {C:\Users\JKA\Google Drive\Studying\System Verilog\APB\apb_bus.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module apb_bus
+
+Top level modules:
+	apb_bus
+
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/package.sv} {2 {vlog -work work -vopt -sv {C:\Users\JKA\Google Drive\Studying\System Verilog\APB\package.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+** Note: (vlog-2286) Using implicit +incdir+C:/Users/JKA/Documents/Questasim install/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+-- Compiling package package_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module seq_item_tb
+** Warning: C:\Users\JKA\Google Drive\Studying\System Verilog\APB\package.sv(47): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+
+
+Top level modules:
+	seq_item_tb
+
+} {} {}}
