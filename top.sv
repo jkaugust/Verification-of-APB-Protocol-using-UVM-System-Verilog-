@@ -1,0 +1,23 @@
+module top (clk,rst,addr_in,wr_in,sel,
+  wr_out1,addr_out1,data_out1,wr_out2,addr_out2,data_out2,
+  wr_out3,addr_out3,data_out3,wr_out4,addr_out4,data_out4);
+  input clk;
+  input rst;
+  input [7:0] addr_in;
+  input wr_in; //write when 1 and read when 0
+  input sel;
+  output wr_out1,wr_out2,wr_out3,wr_out4;
+  output [7:0] addr_out1,addr_out2,addr_out3,addr_out4;
+  output [31:0] data_out1,data_out2,data_out3,data_out4;
+  
+  wire [1:0] sel_port;
+  wire en,wr_out,ready;
+  wire [7:0] addr_out;
+  wire [31:0] data_out;
+  
+ apb_master apb_m (clk,rst,addr_in,wr_in,ready,sel,
+        data_in,sel_port,en,wr_out,addr_out,data_out);
+ apb_slave apb_s (clk,rst,wr_in,en,sel_port,addr_in,data_in,ready,
+        wr_out1,addr_out1,data_out1,wr_out2,addr_out2,data_out2,
+        wr_out3,addr_out3,data_out3,wr_out4,addr_out4,data_out4);
+endmodule

@@ -8,8 +8,7 @@ module apb_master (clk,rst,addr_in,wr_in,ready,sel,
   input sel;
   input [31:0] data_in;
   output reg [1:0] sel_port;
-  output reg en;
-  output reg wr_out;
+  output reg en,wr_out,ready;
   output reg [7:0] addr_out;
   output reg [31:0] data_out;
   
