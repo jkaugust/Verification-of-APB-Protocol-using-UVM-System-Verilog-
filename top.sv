@@ -22,3 +22,7 @@ module top (clk,rst,addr_in,wr_in,sel,data_in,
         wr_out1,addr_out1,data_out1,wr_out2,addr_out2,data_out2,
         wr_out3,addr_out3,data_out3,wr_out4,addr_out4,data_out4);
 endmodule
+
+
+
+

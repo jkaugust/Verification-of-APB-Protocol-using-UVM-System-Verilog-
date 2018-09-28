@@ -1,0 +1,41 @@
+`ifndef TBENCH_TOP
+`define TBENCH_TOP
+
+`include "top.sv"
+`include "in_intf.sv"
+`include "out_intf.sv"
+
+module tbench_top;
+  
+  bit clk, rst;
+  
+  always 
+    begin
+      clk = 1;
+      #5; clk =0;
+      #5;
+    end
+    
+    
+    initial begin
+      rst = 0;
+      #5; rst =1;
+    end
+    
+    in_intf ininter (clk,rst);
+    
+    out_intf outinter[4](clk);
+    
+    top DUT (.clk(clk),.rst(rst),.addr_in(in_intf.addr_in),
+              .wr_in(in_intf.wr_in),.sel(in_intf.sel),
+              .data_in(in_intf.data_in).wr_out1(out_intf[1].wr_out),
+              .wr_out2(out_intf[2].wr_out),.wr_out3(out_intf[3].wr_out),
+              .wr_out4(out_intf[4].wr_out),.addr_out1(out_intf[1].addr_out),
+              .addr_out2(out_intf[2].addr_out),.addr_out3(out_intf[3].addr_out),
+              .addr_out4(out_intf[4].addr_out),.data_out1(out_intf[1].data_out),
+              .data_out2(out_intf[2].data_out),.data_out3(out_intf[3].data_out),
+              .data_out4(out_intf[4].data_out));
+    
+    
+endmodule
+`endif //TBENCH_TOP

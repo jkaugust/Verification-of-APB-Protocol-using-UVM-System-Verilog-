@@ -5,19 +5,56 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	apb_slave
 
-} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/test_top.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/test_top.sv}
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/seq.sv} {0 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/seq.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module test_top
+** Note: (vlog-2286) Using implicit +incdir+C:/Users/JKA/Documents/Questasim install/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
 
-Top level modules:
-	test_top
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/seq.sv(12):  Failed to find name 'add_typewide_sequence' in specified scope
 
-} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv}
+} {5.0 6.0} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv} {0 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+** Note: (vlog-2286) Using implicit +incdir+C:/Users/JKA/Documents/Questasim install/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(43): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(43): near ".": syntax error, unexpected '.'
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(44): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(46): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(46): near ".": syntax error, unexpected '.'
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(48): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(48): near ".": syntax error, unexpected '.'
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(49): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(54): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(54): near ".": syntax error, unexpected '.'
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(56): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(56): near ".": syntax error, unexpected '.'
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(58): (vlog-2163) Macro `DRIV_IF is undefined.
+
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(58): near ".": syntax error, unexpected '.'
+** Error: C:/Users/JKA/Google Drive/Studying/System Verilog/APB/driv.sv(64): End label 'mem_driver' does not match class name on line 10.
+
+} {5.0 6.0 7.0 9.0 10.0 11.0 12.0 14.0 15.0 17.0 18.0 19.0 20.0 22.0 23.0 25.0 26.0 28.0} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/apb_master.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module apb_master
 
 Top level modules:
 	apb_master
+
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/tbench_top.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/tbench_top.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module top
+-- Compiling interface in_intf
+-- Compiling interface out_intf
+-- Compiling module tbench_top
+
+Top level modules:
+	tbench_top
 
 } {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/top.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/top.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -25,5 +62,35 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	top
+
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/in_intf.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/in_intf.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling interface in_intf
+
+Top level modules:
+	--none--
+
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/seq_item.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/seq_item.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+** Note: (vlog-2286) Using implicit +incdir+C:/Users/JKA/Documents/Questasim install/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/sequencer.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/sequencer.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+** Note: (vlog-2286) Using implicit +incdir+C:/Users/JKA/Documents/Questasim install/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/out_intf.sv} {1 {vlog -work work -vopt -sv {C:/Users/JKA/Google Drive/Studying/System Verilog/APB/out_intf.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling interface out_intf
+
+Top level modules:
+	--none--
 
 } {} {}}

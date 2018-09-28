@@ -14,11 +14,7 @@ module apb_master (clk,rst,addr_in,wr_in,ready,sel,
   output reg [31:0] data_out;
   
   reg [1:0] state;
-  typedef bit [1:0] sel_bit;
-  typedef bit [7:0] add_bit;
-  int a,b;
-  sel_bit qa;
-  
+ 
   localparam [1:0]  IDLE    = 2'b00,
                     SETUP   = 2'b01,
                     ACCESS  = 2'b10,
@@ -54,7 +50,7 @@ module apb_master (clk,rst,addr_in,wr_in,ready,sel,
             end
             
             SETUP: begin           
-              sel_port   <= sel_sig (addr_in);
+              sel_port   <= {>>{addr_in[7],addr_in[6]}};;
               en         <= 1;
               if (sel == 1) begin
                  state  <= ACCESS;
@@ -107,13 +103,11 @@ module apb_master (clk,rst,addr_in,wr_in,ready,sel,
             endcase
           end
         end
-            
-  function sel_bit sel_sig (input add_bit ad_in);
-    a = ad_in[7];
-    b = ad_in[6];
-    qa = {>>{a,b}};
-    return qa;
-  endfunction
+ 
   
 endmodule
       
+
+
+
+
